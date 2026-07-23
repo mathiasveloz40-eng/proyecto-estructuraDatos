@@ -298,7 +298,10 @@ function GameDataStructuresUI({
           />
         </div>
         {children}
-        <div className="footer-note">NEXUS ARCADE</div>
+        <div className="footer-note">
+          <p> &copy;2026 NEXUS ARCADE. Todos los derechos reservados</p>
+          <p> Hecho por: Juan Espin y Mathias Veloz</p>
+        </div>
       </main>
     </div>
   );
