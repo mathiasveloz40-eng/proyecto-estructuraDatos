@@ -1,14 +1,14 @@
 import GameDataStructuresUI from './components/GameDataStructuresUI'
 
-const studentNames = ['Valentina Cruz', 'Mateo Andrade']
+const studentNames = ['Mathias Veloz', 'Juan Espin']
 
 function App() {
   return (
     <GameDataStructuresUI
       projectName="Nexus Arcade"
-      projectSubtitle="Laboratorio de estructuras de datos"
+      projectSubtitle="Proyecto de estructuras de datos"
       gameName="Videojuego"
-      userName="Valentina"
+      userName="Veloz"
       studentNames={studentNames}
       initialRecords={[
         { id: 1, name: 'Eclipse Runner', category: 'Arcade', score: 9820, status: 'Activo' },
