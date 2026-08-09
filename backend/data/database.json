@@ -1,0 +1,1031 @@
+{
+  "meta": {
+    "version": 1,
+    "createdAt": "2026-08-09T18:40:28.360Z",
+    "updatedAt": "2026-08-09T18:40:28.360Z",
+    "demo": true
+  },
+  "config": {
+    "institucion": "Hospital General San Gabriel",
+    "zonaHoraria": "America/Guayaquil",
+    "maxAccionesDeshacer": 50,
+    "maxActividad": 100,
+    "sequences": {
+      "urgencia": 9,
+      "movimiento": 40,
+      "accion": 6
+    },
+    "ultimaAperturaOperativa": "2026-08-09T18:40:28.360Z"
+  },
+  "pacientes": [
+    {
+      "id": 10451,
+      "historiaClinica": 10451,
+      "nombres": "Ana",
+      "apellidos": "Mendoza",
+      "cedula": "1712458101",
+      "fechaNacimiento": "1988-04-12",
+      "sexo": "Femenino",
+      "telefono": "0994102201",
+      "contactoEmergencia": "Carlos Mendoza - 0987654101",
+      "fechaIngreso": "2026-08-09T17:25:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 2
+    },
+    {
+      "id": 10452,
+      "historiaClinica": 10452,
+      "nombres": "Luis",
+      "apellidos": "Cabrera",
+      "cedula": "0923456712",
+      "fechaNacimiento": "1976-11-03",
+      "sexo": "Masculino",
+      "telefono": "0982103302",
+      "contactoEmergencia": "María Cabrera - 0971122300",
+      "fechaIngreso": "2026-08-09T17:46:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 3
+    },
+    {
+      "id": 10453,
+      "historiaClinica": 10453,
+      "nombres": "Sofía",
+      "apellidos": "Paredes",
+      "cedula": "1756782304",
+      "fechaNacimiento": "1995-07-21",
+      "sexo": "Femenino",
+      "telefono": "0967204403",
+      "contactoEmergencia": "Elena Paredes - 0996112200",
+      "fechaIngreso": "2026-08-09T18:22:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 1
+    },
+    {
+      "id": 10454,
+      "historiaClinica": 10454,
+      "nombres": "Mateo",
+      "apellidos": "Vera",
+      "cedula": "0912345605",
+      "fechaNacimiento": "1964-01-15",
+      "sexo": "Masculino",
+      "telefono": "0998305504",
+      "contactoEmergencia": "Rosa Vera - 0984413322",
+      "fechaIngreso": "2026-08-09T16:58:28.360Z",
+      "estado": "En atención",
+      "areaActual": "Urgencias",
+      "prioridad": 2
+    },
+    {
+      "id": 10455,
+      "historiaClinica": 10455,
+      "nombres": "Valentina",
+      "apellidos": "Torres",
+      "cedula": "1723456706",
+      "fechaNacimiento": "2001-09-30",
+      "sexo": "Femenino",
+      "telefono": "0959406605",
+      "contactoEmergencia": "Jorge Torres - 0965532211",
+      "fechaIngreso": "2026-08-09T17:12:28.360Z",
+      "estado": "En atención",
+      "areaActual": "Radiología",
+      "prioridad": 3
+    },
+    {
+      "id": 10456,
+      "historiaClinica": 10456,
+      "nombres": "Diego",
+      "apellidos": "Salazar",
+      "cedula": "0909876507",
+      "fechaNacimiento": "1958-05-08",
+      "sexo": "Masculino",
+      "telefono": "0981507706",
+      "contactoEmergencia": "Lucía Salazar - 0998841122",
+      "fechaIngreso": "2026-08-09T11:40:28.360Z",
+      "estado": "Hospitalizado",
+      "areaActual": "UCI",
+      "prioridad": 1
+    },
+    {
+      "id": 10457,
+      "historiaClinica": 10457,
+      "nombres": "Camila",
+      "apellidos": "Rojas",
+      "cedula": "1765432108",
+      "fechaNacimiento": "1983-02-26",
+      "sexo": "Femenino",
+      "telefono": "0972608807",
+      "contactoEmergencia": "Andrés Rojas - 0962277344",
+      "fechaIngreso": "2026-08-08T17:00:28.360Z",
+      "estado": "Hospitalizado",
+      "areaActual": "Hospitalización",
+      "prioridad": 4
+    },
+    {
+      "id": 10458,
+      "historiaClinica": 10458,
+      "nombres": "Andrés",
+      "apellidos": "Molina",
+      "cedula": "0954321009",
+      "fechaNacimiento": "1971-12-17",
+      "sexo": "Masculino",
+      "telefono": "0963709908",
+      "contactoEmergencia": "Patricia Molina - 0992377455",
+      "fechaIngreso": "2026-08-08T07:30:28.360Z",
+      "estado": "Hospitalizado",
+      "areaActual": "Hospitalización",
+      "prioridad": 3
+    },
+    {
+      "id": 10459,
+      "historiaClinica": 10459,
+      "nombres": "Isabella",
+      "apellidos": "León",
+      "cedula": "1743210910",
+      "fechaNacimiento": "1990-06-09",
+      "sexo": "Femenino",
+      "telefono": "0994811009",
+      "contactoEmergencia": "Marco León - 0983456677",
+      "fechaIngreso": "2026-08-07T13:20:28.360Z",
+      "estado": "Alta",
+      "areaActual": "Salida",
+      "prioridad": 5
+    },
+    {
+      "id": 10460,
+      "historiaClinica": 10460,
+      "nombres": "Nicolás",
+      "apellidos": "Castro",
+      "cedula": "0932109811",
+      "fechaNacimiento": "2008-03-04",
+      "sexo": "Masculino",
+      "telefono": "0985922110",
+      "contactoEmergencia": "Gabriela Castro - 0974588899",
+      "fechaIngreso": "2026-08-09T17:59:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 4
+    },
+    {
+      "id": 10461,
+      "historiaClinica": 10461,
+      "nombres": "Emilia",
+      "apellidos": "Guerrero",
+      "cedula": "1721098712",
+      "fechaNacimiento": "1949-10-22",
+      "sexo": "Femenino",
+      "telefono": "0976033211",
+      "contactoEmergencia": "Daniel Guerrero - 0965678800",
+      "fechaIngreso": "2026-08-09T18:13:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 2
+    },
+    {
+      "id": 10462,
+      "historiaClinica": 10462,
+      "nombres": "Gabriel",
+      "apellidos": "Zambrano",
+      "cedula": "0910987613",
+      "fechaNacimiento": "1967-08-14",
+      "sexo": "Masculino",
+      "telefono": "0967144312",
+      "contactoEmergencia": "Mónica Zambrano - 0956769911",
+      "fechaIngreso": "2026-08-09T05:40:28.360Z",
+      "estado": "Hospitalizado",
+      "areaActual": "UCI",
+      "prioridad": 1
+    },
+    {
+      "id": 10463,
+      "historiaClinica": 10463,
+      "nombres": "Mariana",
+      "apellidos": "Reyes",
+      "cedula": "1709876514",
+      "fechaNacimiento": "1980-01-29",
+      "sexo": "Femenino",
+      "telefono": "0958255413",
+      "contactoEmergencia": "Felipe Reyes - 0997861022",
+      "fechaIngreso": "2026-08-09T16:28:28.360Z",
+      "estado": "En atención",
+      "areaActual": "Urgencias",
+      "prioridad": 3
+    },
+    {
+      "id": 10464,
+      "historiaClinica": 10464,
+      "nombres": "Tomás",
+      "apellidos": "Navarro",
+      "cedula": "0908765415",
+      "fechaNacimiento": "1998-05-19",
+      "sexo": "Masculino",
+      "telefono": "0999366514",
+      "contactoEmergencia": "Laura Navarro - 0988952133",
+      "fechaIngreso": "2026-08-09T18:24:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 5
+    },
+    {
+      "id": 10465,
+      "historiaClinica": 10465,
+      "nombres": "Daniela",
+      "apellidos": "Ortega",
+      "cedula": "1757654316",
+      "fechaNacimiento": "1974-07-07",
+      "sexo": "Femenino",
+      "telefono": "0980477615",
+      "contactoEmergencia": "Miguel Ortega - 0979043244",
+      "fechaIngreso": "2026-08-09T03:10:28.360Z",
+      "estado": "Hospitalizado",
+      "areaActual": "Hospitalización",
+      "prioridad": 2
+    },
+    {
+      "id": 10466,
+      "historiaClinica": 10466,
+      "nombres": "Joaquín",
+      "apellidos": "Peña",
+      "cedula": "0946543217",
+      "fechaNacimiento": "1986-11-11",
+      "sexo": "Masculino",
+      "telefono": "0971588716",
+      "contactoEmergencia": "Carolina Peña - 0960134355",
+      "fechaIngreso": "2026-08-09T18:31:28.360Z",
+      "estado": "En espera",
+      "areaActual": "Urgencias",
+      "prioridad": 3
+    },
+    {
+      "id": 10467,
+      "historiaClinica": 10467,
+      "nombres": "Lucía",
+      "apellidos": "Benítez",
+      "cedula": "1735432118",
+      "fechaNacimiento": "1993-04-25",
+      "sexo": "Femenino",
+      "telefono": "0962699817",
+      "contactoEmergencia": "Raúl Benítez - 0951225466",
+      "fechaIngreso": "2026-08-08T21:40:28.360Z",
+      "estado": "Hospitalizado",
+      "areaActual": "Hospitalización",
+      "prioridad": 3
+    },
+    {
+      "id": 10468,
+      "historiaClinica": 10468,
+      "nombres": "Samuel",
+      "apellidos": "Acosta",
+      "cedula": "0924321019",
+      "fechaNacimiento": "1961-09-02",
+      "sexo": "Masculino",
+      "telefono": "0953710918",
+      "contactoEmergencia": "Teresa Acosta - 0992316577",
+      "fechaIngreso": "2026-08-09T15:53:28.360Z",
+      "estado": "En atención",
+      "areaActual": "Laboratorio",
+      "prioridad": 2
+    }
+  ],
+  "urgencias": [
+    {
+      "id": "URG-0001",
+      "pacienteId": 10453,
+      "prioridad": 1,
+      "horaLlegada": "2026-08-09T18:22:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0002",
+      "pacienteId": 10451,
+      "prioridad": 2,
+      "horaLlegada": "2026-08-09T17:25:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0003",
+      "pacienteId": 10461,
+      "prioridad": 2,
+      "horaLlegada": "2026-08-09T18:13:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0004",
+      "pacienteId": 10452,
+      "prioridad": 3,
+      "horaLlegada": "2026-08-09T17:46:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0005",
+      "pacienteId": 10466,
+      "prioridad": 3,
+      "horaLlegada": "2026-08-09T18:31:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0006",
+      "pacienteId": 10460,
+      "prioridad": 4,
+      "horaLlegada": "2026-08-09T17:59:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0007",
+      "pacienteId": 10464,
+      "prioridad": 5,
+      "horaLlegada": "2026-08-09T18:24:28.360Z",
+      "estado": "espera",
+      "llamadoEn": null
+    },
+    {
+      "id": "URG-0008",
+      "pacienteId": 10454,
+      "prioridad": 2,
+      "horaLlegada": "2026-08-09T16:58:28.360Z",
+      "estado": "atencion",
+      "llamadoEn": "2026-08-09T17:38:28.360Z"
+    },
+    {
+      "id": "URG-0009",
+      "pacienteId": 10463,
+      "prioridad": 3,
+      "horaLlegada": "2026-08-09T16:28:28.360Z",
+      "estado": "atencion",
+      "llamadoEn": "2026-08-09T17:17:28.360Z"
+    }
+  ],
+  "camas": [
+    {
+      "id": 1,
+      "codigo": "URG-01",
+      "area": "Urgencias",
+      "ocupada": true,
+      "pacienteId": 10454
+    },
+    {
+      "id": 2,
+      "codigo": "URG-02",
+      "area": "Urgencias",
+      "ocupada": true,
+      "pacienteId": 10463
+    },
+    {
+      "id": 3,
+      "codigo": "URG-03",
+      "area": "Urgencias",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 4,
+      "codigo": "URG-04",
+      "area": "Urgencias",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 5,
+      "codigo": "URG-05",
+      "area": "Urgencias",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 6,
+      "codigo": "URG-06",
+      "area": "Urgencias",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 7,
+      "codigo": "URG-07",
+      "area": "Urgencias",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 8,
+      "codigo": "URG-08",
+      "area": "Urgencias",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 9,
+      "codigo": "UCI-01",
+      "area": "UCI",
+      "ocupada": true,
+      "pacienteId": 10456
+    },
+    {
+      "id": 10,
+      "codigo": "UCI-02",
+      "area": "UCI",
+      "ocupada": true,
+      "pacienteId": 10462
+    },
+    {
+      "id": 11,
+      "codigo": "UCI-03",
+      "area": "UCI",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 12,
+      "codigo": "UCI-04",
+      "area": "UCI",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 13,
+      "codigo": "UCI-05",
+      "area": "UCI",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 14,
+      "codigo": "UCI-06",
+      "area": "UCI",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 15,
+      "codigo": "HOSP-01",
+      "area": "Hospitalización",
+      "ocupada": true,
+      "pacienteId": 10457
+    },
+    {
+      "id": 16,
+      "codigo": "HOSP-02",
+      "area": "Hospitalización",
+      "ocupada": true,
+      "pacienteId": 10458
+    },
+    {
+      "id": 17,
+      "codigo": "HOSP-03",
+      "area": "Hospitalización",
+      "ocupada": true,
+      "pacienteId": 10465
+    },
+    {
+      "id": 18,
+      "codigo": "HOSP-04",
+      "area": "Hospitalización",
+      "ocupada": true,
+      "pacienteId": 10467
+    },
+    {
+      "id": 19,
+      "codigo": "HOSP-05",
+      "area": "Hospitalización",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 20,
+      "codigo": "HOSP-06",
+      "area": "Hospitalización",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 21,
+      "codigo": "HOSP-07",
+      "area": "Hospitalización",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 22,
+      "codigo": "HOSP-08",
+      "area": "Hospitalización",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 23,
+      "codigo": "HOSP-09",
+      "area": "Hospitalización",
+      "ocupada": false,
+      "pacienteId": null
+    },
+    {
+      "id": 24,
+      "codigo": "HOSP-10",
+      "area": "Hospitalización",
+      "ocupada": false,
+      "pacienteId": null
+    }
+  ],
+  "movimientos": [
+    {
+      "id": "MOV-00001",
+      "pacienteId": 10451,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T17:25:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00002",
+      "pacienteId": 10451,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T17:37:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00003",
+      "pacienteId": 10452,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T17:46:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00004",
+      "pacienteId": 10452,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T17:58:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00005",
+      "pacienteId": 10453,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T18:20:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00006",
+      "pacienteId": 10453,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T18:32:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00007",
+      "pacienteId": 10454,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T16:58:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00008",
+      "pacienteId": 10454,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T17:10:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00009",
+      "pacienteId": 10455,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T17:12:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00010",
+      "pacienteId": 10455,
+      "area": "Radiología",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Radiología",
+      "fecha": "2026-08-09T17:24:28.360Z",
+      "descripcion": "Traslado a Radiología",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00011",
+      "pacienteId": 10456,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T11:40:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00012",
+      "pacienteId": 10456,
+      "area": "UCI",
+      "areaOrigen": "Triaje",
+      "areaDestino": "UCI",
+      "fecha": "2026-08-09T11:52:28.360Z",
+      "descripcion": "Traslado a UCI",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00013",
+      "pacienteId": 10457,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-08T17:00:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00014",
+      "pacienteId": 10457,
+      "area": "Hospitalización",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Hospitalización",
+      "fecha": "2026-08-08T17:12:28.360Z",
+      "descripcion": "Traslado a Hospitalización",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00015",
+      "pacienteId": 10458,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-08T07:30:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00016",
+      "pacienteId": 10458,
+      "area": "Hospitalización",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Hospitalización",
+      "fecha": "2026-08-08T07:42:28.360Z",
+      "descripcion": "Traslado a Hospitalización",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00017",
+      "pacienteId": 10459,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-07T13:20:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00018",
+      "pacienteId": 10459,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-07T13:32:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00019",
+      "pacienteId": 10459,
+      "area": "Salida",
+      "areaOrigen": "Urgencias",
+      "areaDestino": "Salida",
+      "fecha": "2026-08-07T16:25:28.360Z",
+      "descripcion": "Alta administrativa",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00020",
+      "pacienteId": 10460,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T17:59:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00021",
+      "pacienteId": 10460,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T18:11:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00022",
+      "pacienteId": 10461,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T18:13:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00023",
+      "pacienteId": 10461,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T18:25:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00024",
+      "pacienteId": 10462,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T05:40:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00025",
+      "pacienteId": 10462,
+      "area": "UCI",
+      "areaOrigen": "Triaje",
+      "areaDestino": "UCI",
+      "fecha": "2026-08-09T05:52:28.360Z",
+      "descripcion": "Traslado a UCI",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00026",
+      "pacienteId": 10463,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T16:28:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00027",
+      "pacienteId": 10463,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T16:40:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00028",
+      "pacienteId": 10464,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T18:20:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00029",
+      "pacienteId": 10464,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T18:32:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00030",
+      "pacienteId": 10465,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T03:10:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00031",
+      "pacienteId": 10465,
+      "area": "Hospitalización",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Hospitalización",
+      "fecha": "2026-08-09T03:22:28.360Z",
+      "descripcion": "Traslado a Hospitalización",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00032",
+      "pacienteId": 10466,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T18:20:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00033",
+      "pacienteId": 10466,
+      "area": "Urgencias",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Urgencias",
+      "fecha": "2026-08-09T18:32:28.360Z",
+      "descripcion": "Traslado a Urgencias",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00034",
+      "pacienteId": 10467,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-08T21:40:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00035",
+      "pacienteId": 10467,
+      "area": "Hospitalización",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Hospitalización",
+      "fecha": "2026-08-08T21:52:28.360Z",
+      "descripcion": "Traslado a Hospitalización",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00036",
+      "pacienteId": 10468,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-09T15:53:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00037",
+      "pacienteId": 10468,
+      "area": "Laboratorio",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Laboratorio",
+      "fecha": "2026-08-09T16:05:28.360Z",
+      "descripcion": "Traslado a Laboratorio",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00038",
+      "pacienteId": 10451,
+      "area": "Laboratorio",
+      "areaOrigen": "Urgencias",
+      "areaDestino": "Laboratorio",
+      "fecha": "2026-08-09T18:37:28.360Z",
+      "descripcion": "Solicitud de toma de muestras",
+      "estado": "pendiente"
+    },
+    {
+      "id": "MOV-00039",
+      "pacienteId": 10462,
+      "area": "Quirófano",
+      "areaOrigen": "UCI",
+      "areaDestino": "Quirófano",
+      "fecha": "2026-08-09T18:26:28.360Z",
+      "descripcion": "Traslado coordinado con quirófano",
+      "estado": "pendiente"
+    },
+    {
+      "id": "MOV-00040",
+      "pacienteId": 10467,
+      "area": "Radiología",
+      "areaOrigen": "Hospitalización",
+      "areaDestino": "Radiología",
+      "fecha": "2026-08-09T18:18:28.360Z",
+      "descripcion": "Control de imagen programado",
+      "estado": "pendiente"
+    }
+  ],
+  "acciones": [
+    {
+      "id": "ACT-000006",
+      "tipo": "CAMBIO_AREA",
+      "descripcion": "Valentina Torres fue trasladada a Radiología",
+      "fecha": "2026-08-09T17:24:28.360Z",
+      "entidad": {
+        "tipo": "paciente",
+        "id": 10455
+      },
+      "undo": {
+        "paciente": {
+          "id": 10455,
+          "historiaClinica": 10455,
+          "nombres": "Valentina",
+          "apellidos": "Torres",
+          "cedula": "1723456706",
+          "fechaNacimiento": "2001-09-30",
+          "sexo": "Femenino",
+          "telefono": "0959406605",
+          "contactoEmergencia": "Jorge Torres - 0965532211",
+          "fechaIngreso": "2026-08-09T17:12:28.360Z",
+          "estado": "En atención",
+          "areaActual": "Urgencias",
+          "prioridad": 3
+        },
+        "movimientoId": "MOV-00010",
+        "cama": null
+      }
+    }
+  ],
+  "actividad": [
+    {
+      "id": "ACT-000006",
+      "tipo": "CAMBIO_AREA",
+      "descripcion": "Valentina Torres fue trasladada a Radiología",
+      "fecha": "2026-08-09T17:24:28.360Z",
+      "entidad": {
+        "tipo": "paciente",
+        "id": 10455
+      }
+    },
+    {
+      "id": "ACT-000005",
+      "tipo": "ASIGNAR_CAMA",
+      "descripcion": "Cama HOSP-04 asignada a Lucía Benítez",
+      "fecha": "2026-08-09T17:09:28.360Z",
+      "entidad": {
+        "tipo": "cama",
+        "id": 18
+      }
+    },
+    {
+      "id": "ACT-000004",
+      "tipo": "LLAMAR_URGENCIAS",
+      "descripcion": "Mariana Reyes inició atención en Urgencias",
+      "fecha": "2026-08-09T17:17:28.360Z",
+      "entidad": {
+        "tipo": "paciente",
+        "id": 10463
+      }
+    },
+    {
+      "id": "ACT-000003",
+      "tipo": "CREAR_TRASLADO",
+      "descripcion": "Control de imagen solicitado para Lucía Benítez",
+      "fecha": "2026-08-09T18:18:28.360Z",
+      "entidad": {
+        "tipo": "paciente",
+        "id": 10467
+      }
+    },
+    {
+      "id": "ACT-000002",
+      "tipo": "CREAR_TRASLADO",
+      "descripcion": "Traslado a quirófano solicitado para Gabriel Zambrano",
+      "fecha": "2026-08-09T18:26:28.360Z",
+      "entidad": {
+        "tipo": "paciente",
+        "id": 10462
+      }
+    },
+    {
+      "id": "ACT-000001",
+      "tipo": "INGRESO_URGENCIAS",
+      "descripcion": "Joaquín Peña ingresó a la lista de espera",
+      "fecha": "2026-08-09T18:31:28.360Z",
+      "entidad": {
+        "tipo": "paciente",
+        "id": 10466
+      }
+    }
+  ]
+}

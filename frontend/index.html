@@ -1,0 +1,100 @@
+ <!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#123a63" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="Hospital Flow, gestión operativa del flujo de pacientes"
+    />
+    <title>Hospital Flow</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <script type="module" src="/js/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Ir al contenido principal</a>
+
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M9.5 3h5v6.5H21v5h-6.5V21h-5v-6.5H3v-5h6.5V3Z" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <strong>Hospital Flow</strong>
+            <small>Gestión operativa</small>
+          </span>
+        </div>
+
+        <nav class="sidebar__nav" id="primary-navigation"></nav>
+
+        <div class="sidebar__footer">
+          <div class="sidebar__support">
+            <span class="sidebar__support-icon" aria-hidden="true">HF</span>
+            <span><strong>Centro asistencial</strong><small>Panel interno</small></span>
+          </div>
+        </div>
+      </aside>
+
+      <div class="app-main">
+        <header class="topbar">
+          <button
+            class="icon-button topbar__menu"
+            id="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-controls="sidebar"
+            aria-expanded="false"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+
+          <div class="topbar__title">
+            <strong id="current-section">Resumen</strong>
+            <span id="current-date"></span>
+          </div>
+
+          <form class="global-search" id="global-search" role="search" autocomplete="off">
+            <label class="sr-only" for="global-search-input">Buscar paciente</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></svg>
+            <input
+              id="global-search-input"
+              name="q"
+              type="search"
+              placeholder="Buscar paciente o historia clínica"
+              aria-controls="global-search-results"
+              aria-expanded="false"
+            />
+            <button class="sr-only" type="submit">Buscar</button>
+            <div class="search-results" id="global-search-results" role="listbox" aria-label="Resultados de búsqueda" hidden></div>
+          </form>
+
+          <div class="system-status" id="system-status" role="status" aria-label="Verificando estado del sistema">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Verificando</span>
+          </div>
+        </header>
+
+        <main class="content" id="main-content" tabindex="-1">
+          <div class="page-loading" role="status">
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Cargando panel…</span>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div class="sidebar-backdrop" id="sidebar-backdrop" hidden></div>
+    <div class="modal-root" id="modal-root"></div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
