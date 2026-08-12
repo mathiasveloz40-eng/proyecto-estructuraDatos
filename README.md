@@ -112,3 +112,10 @@ Esta aplicación se diseñó para una demostración local. No incluye autenticac
 
 - Mathias Veloz
 - Juan Espin
+
+
+
+# como correrlo
+Abrir cd \backend y correr el servidor
+usando node server.js 
+

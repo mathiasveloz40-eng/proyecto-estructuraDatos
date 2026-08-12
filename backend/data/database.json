@@ -2,11 +2,7 @@
   "meta": {
     "version": 1,
     "createdAt": "2026-08-09T18:40:28.360Z",
-<<<<<<< HEAD
-    "updatedAt": "2026-08-12T02:06:45.234Z",
-=======
     "updatedAt": "2026-08-11T21:51:53.098Z",
->>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
     "demo": true
   },
   "config": {
@@ -15,17 +11,10 @@
     "maxAccionesDeshacer": 50,
     "maxActividad": 100,
     "sequences": {
-<<<<<<< HEAD
-      "urgencia": 10,
-      "movimiento": 48,
-      "accion": 26,
-      "aplicacionMovimiento": 44
-=======
       "urgencia": 9,
       "movimiento": 43,
       "accion": 21,
       "aplicacionMovimiento": 40
->>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
     },
     "ultimaAperturaOperativa": "2026-08-09T18:40:28.360Z"
   },
@@ -284,21 +273,6 @@
       "estado": "Alta",
       "areaActual": "Salida",
       "prioridad": 2
-    },
-    {
-      "id": 123,
-      "historiaClinica": 123,
-      "nombres": "Juan Alejandro",
-      "apellidos": "Espin Chavez",
-      "cedula": "1351164106",
-      "fechaNacimiento": "2006-05-26",
-      "sexo": "Masculino",
-      "telefono": "0950737732",
-      "contactoEmergencia": "0959688324",
-      "fechaIngreso": "2026-08-10T00:00:00.000Z",
-      "estado": "En atención",
-      "areaActual": "Hospitalización",
-      "prioridad": 2
     }
   ],
   "urgencias": [
@@ -373,14 +347,6 @@
       "horaLlegada": "2026-08-09T16:28:28.360Z",
       "estado": "atencion",
       "llamadoEn": "2026-08-09T17:17:28.360Z"
-    },
-    {
-      "id": "URG-0010",
-      "pacienteId": 123,
-      "prioridad": 2,
-      "horaLlegada": "2026-08-12T01:38:00.000Z",
-      "estado": "atencion",
-      "llamadoEn": "2026-08-12T01:41:54.235Z"
     }
   ],
   "camas": [
@@ -1004,135 +970,6 @@
       }
     },
     {
-<<<<<<< HEAD
-      "id": "MOV-00044",
-      "pacienteId": 123,
-      "area": "Radiología",
-      "areaOrigen": null,
-      "areaDestino": "Radiología",
-      "fecha": "2026-08-11T00:00:00.000Z",
-      "descripcion": "Ingreso y registro administrativo",
-      "estado": "completado",
-      "ordenAplicacion": 41
-    },
-    {
-      "id": "MOV-00045",
-      "pacienteId": 123,
-      "area": "Urgencias",
-      "areaOrigen": "Radiología",
-      "areaDestino": "Urgencias",
-      "fecha": "2026-08-12T01:38:00.000Z",
-      "descripcion": "Ingreso a la lista de espera de Urgencias",
-      "estado": "completado",
-      "ordenAplicacion": 42,
-      "contextoAnterior": {
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "Registrado",
-          "areaActual": "Radiología",
-          "prioridad": 2
-        },
-        "cama": null,
-        "urgencia": null
-      }
-    },
-    {
-      "id": "MOV-00046",
-      "pacienteId": 123,
-      "area": "Hospitalización",
-      "areaOrigen": "Urgencias",
-      "areaDestino": "Hospitalización",
-      "fecha": "2026-08-12T01:52:33.829Z",
-      "descripcion": "Asignación de cama HOSP-09",
-      "estado": "completado",
-      "ordenAplicacion": 43,
-      "contextoAnterior": {
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "Llamado",
-          "areaActual": "Urgencias",
-          "prioridad": 2
-        },
-        "cama": {
-          "id": 23,
-          "codigo": "HOSP-09",
-          "area": "Hospitalización",
-          "ocupada": false,
-          "pacienteId": null
-        },
-        "urgencia": {
-          "id": "URG-0010",
-          "pacienteId": 123,
-          "prioridad": 2,
-          "horaLlegada": "2026-08-12T01:38:00.000Z",
-          "estado": "llamado",
-          "llamadoEn": "2026-08-12T01:41:54.235Z"
-        }
-      }
-    },
-    {
-      "id": "MOV-00047",
-      "pacienteId": 123,
-      "area": "Hospitalización",
-      "areaOrigen": "Hospitalización",
-      "areaDestino": "Hospitalización",
-      "fecha": "2026-08-12T02:04:13.753Z",
-      "descripcion": "Liberación de cama HOSP-09",
-      "estado": "completado",
-      "ordenAplicacion": 44,
-      "contextoAnterior": {
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "Hospitalizado",
-          "areaActual": "Hospitalización",
-          "prioridad": 2
-        },
-        "cama": {
-          "id": 23,
-          "codigo": "HOSP-09",
-          "area": "Hospitalización",
-          "ocupada": true,
-          "pacienteId": 123
-        },
-        "urgencia": null
-      }
-    },
-    {
-      "id": "MOV-00048",
-      "pacienteId": 123,
-      "area": "Quirófano",
-      "areaOrigen": "Hospitalización",
-      "areaDestino": "Quirófano",
-      "fecha": "2026-08-12T02:05:00.000Z",
-      "descripcion": "Traslado a Quirófano",
-=======
       "id": "MOV-00034",
       "pacienteId": 10467,
       "area": "Triaje",
@@ -1160,7 +997,6 @@
       "areaDestino": "Radiología",
       "fecha": "2026-08-09T18:18:28.360Z",
       "descripcion": "Control de imagen programado",
->>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
       "estado": "pendiente"
     }
   ],
@@ -1553,286 +1389,10 @@
         "cama": null,
         "urgencia": null
       }
-    },
-    {
-      "id": "ACT-000020",
-      "tipo": "CREAR_PACIENTE",
-      "descripcion": "Juan Alejandro Espin Chavez fue registrado en el sistema",
-      "fecha": "2026-08-12T01:16:21.451Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-      },
-      "undo": {
-        "pacienteId": 123,
-        "movimientoId": "MOV-00044"
-      }
-    },
-    {
-      "id": "ACT-000021",
-      "tipo": "ACTUALIZAR_PACIENTE",
-      "descripcion": "La ficha de Juan Alejandro Espin Chavez fue actualizada",
-      "fecha": "2026-08-12T01:22:28.226Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-      },
-      "undo": {
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-11T00:00:00.000Z",
-          "estado": "Registrado",
-          "areaActual": "Radiología",
-          "prioridad": 3
-        },
-        "movimientoId": null,
-        "cama": null,
-        "urgencia": null
-      }
-    },
-    {
-      "id": "ACT-000022",
-      "tipo": "INGRESO_URGENCIAS",
-      "descripcion": "Juan Alejandro Espin Chavez ingresó a Urgencias con prioridad 2",
-      "fecha": "2026-08-12T01:39:34.648Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-      },
-      "undo": {
-        "urgenciaId": "URG-0010",
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "Registrado",
-          "areaActual": "Radiología",
-          "prioridad": 2
-        },
-        "movimientoId": "MOV-00045",
-        "cama": null
-      }
-    },
-    {
-      "id": "ACT-000023",
-      "tipo": "ACTUALIZAR_URGENCIA",
-      "descripcion": "La atención de Juan Alejandro Espin Chavez fue actualizada",
-      "fecha": "2026-08-12T01:41:54.235Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-      },
-      "undo": {
-        "urgencia": {
-          "id": "URG-0010",
-          "pacienteId": 123,
-          "prioridad": 2,
-          "horaLlegada": "2026-08-12T01:38:00.000Z",
-          "estado": "espera",
-          "llamadoEn": null
-        },
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "En espera",
-          "areaActual": "Urgencias",
-          "prioridad": 2
-        }
-      }
-    },
-    {
-      "id": "ACT-000024",
-      "tipo": "ASIGNAR_CAMA",
-      "descripcion": "Cama HOSP-09 asignada a Juan Alejandro Espin Chavez",
-      "fecha": "2026-08-12T01:52:33.829Z",
-      "entidad": {
-        "tipo": "cama",
-        "id": 23
-      },
-      "undo": {
-        "cama": {
-          "id": 23,
-          "codigo": "HOSP-09",
-          "area": "Hospitalización",
-          "ocupada": false,
-          "pacienteId": null
-        },
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "Llamado",
-          "areaActual": "Urgencias",
-          "prioridad": 2
-        },
-        "urgencia": {
-          "id": "URG-0010",
-          "pacienteId": 123,
-          "prioridad": 2,
-          "horaLlegada": "2026-08-12T01:38:00.000Z",
-          "estado": "llamado",
-          "llamadoEn": "2026-08-12T01:41:54.235Z"
-        },
-        "movimientoId": "MOV-00046"
-      }
-    },
-    {
-      "id": "ACT-000025",
-      "tipo": "LIBERAR_CAMA",
-      "descripcion": "Cama HOSP-09 liberada por Juan Alejandro Espin Chavez",
-      "fecha": "2026-08-12T02:04:13.753Z",
-      "entidad": {
-        "tipo": "cama",
-        "id": 23
-      },
-      "undo": {
-        "cama": {
-          "id": 23,
-          "codigo": "HOSP-09",
-          "area": "Hospitalización",
-          "ocupada": true,
-          "pacienteId": 123
-        },
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "Hospitalizado",
-          "areaActual": "Hospitalización",
-          "prioridad": 2
-        },
-        "movimientoId": "MOV-00047"
-      }
-    },
-    {
-      "id": "ACT-000026",
-      "tipo": "CREAR_TRASLADO",
-      "descripcion": "Se solicitó el traslado de Juan Alejandro Espin Chavez a Quirófano",
-      "fecha": "2026-08-12T02:06:45.234Z",
-      "entidad": {
-        "tipo": "movimiento",
-        "id": "MOV-00048"
-      },
-      "undo": {
-        "paciente": {
-          "id": 123,
-          "historiaClinica": 123,
-          "nombres": "Juan Alejandro",
-          "apellidos": "Espin Chavez",
-          "cedula": "1351164106",
-          "fechaNacimiento": "2006-05-26",
-          "sexo": "Masculino",
-          "telefono": "0950737732",
-          "contactoEmergencia": "0959688324",
-          "fechaIngreso": "2026-08-10T00:00:00.000Z",
-          "estado": "En atención",
-          "areaActual": "Hospitalización",
-          "prioridad": 2
-        },
-        "movimientoId": "MOV-00048",
-        "cama": null,
-        "urgencia": null
-      }
     }
   ],
   "actividad": [
     {
-<<<<<<< HEAD
-      "id": "ACT-000026",
-      "tipo": "CREAR_TRASLADO",
-      "descripcion": "Se solicitó el traslado de Juan Alejandro Espin Chavez a Quirófano",
-      "fecha": "2026-08-12T02:06:45.234Z",
-      "entidad": {
-        "tipo": "movimiento",
-        "id": "MOV-00048"
-      }
-    },
-    {
-      "id": "ACT-000025",
-      "tipo": "LIBERAR_CAMA",
-      "descripcion": "Cama HOSP-09 liberada por Juan Alejandro Espin Chavez",
-      "fecha": "2026-08-12T02:04:13.753Z",
-      "entidad": {
-        "tipo": "cama",
-        "id": 23
-      }
-    },
-    {
-      "id": "ACT-000024",
-      "tipo": "ASIGNAR_CAMA",
-      "descripcion": "Cama HOSP-09 asignada a Juan Alejandro Espin Chavez",
-      "fecha": "2026-08-12T01:52:33.829Z",
-      "entidad": {
-        "tipo": "cama",
-        "id": 23
-      }
-    },
-    {
-      "id": "ACT-000023",
-      "tipo": "ACTUALIZAR_URGENCIA",
-      "descripcion": "La atención de Juan Alejandro Espin Chavez fue actualizada",
-      "fecha": "2026-08-12T01:41:54.235Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-      }
-    },
-    {
-      "id": "ACT-000022",
-      "tipo": "INGRESO_URGENCIAS",
-      "descripcion": "Juan Alejandro Espin Chavez ingresó a Urgencias con prioridad 2",
-      "fecha": "2026-08-12T01:39:34.648Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-      }
-    },
-    {
-      "id": "ACT-000021",
-      "tipo": "ACTUALIZAR_PACIENTE",
-      "descripcion": "La ficha de Juan Alejandro Espin Chavez fue actualizada",
-      "fecha": "2026-08-12T01:22:28.226Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-=======
       "id": "ACT-000021",
       "tipo": "DESHACER",
       "descripcion": "Se deshizo: El traslado de Lucía Benítez fue actualizado",
@@ -1840,26 +1400,16 @@
       "entidad": {
         "tipo": "movimiento",
         "id": "MOV-00040"
->>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
       }
     },
     {
       "id": "ACT-000020",
-<<<<<<< HEAD
-      "tipo": "CREAR_PACIENTE",
-      "descripcion": "Juan Alejandro Espin Chavez fue registrado en el sistema",
-      "fecha": "2026-08-12T01:16:21.451Z",
-      "entidad": {
-        "tipo": "paciente",
-        "id": 123
-=======
       "tipo": "ACTUALIZAR_MOVIMIENTO",
       "descripcion": "El traslado de Lucía Benítez fue actualizado",
       "fecha": "2026-08-11T21:51:46.246Z",
       "entidad": {
         "tipo": "movimiento",
         "id": "MOV-00040"
->>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
       }
     },
     {
