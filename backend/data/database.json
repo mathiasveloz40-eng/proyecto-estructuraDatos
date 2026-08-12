@@ -2,7 +2,11 @@
   "meta": {
     "version": 1,
     "createdAt": "2026-08-09T18:40:28.360Z",
+<<<<<<< HEAD
     "updatedAt": "2026-08-12T02:06:45.234Z",
+=======
+    "updatedAt": "2026-08-11T21:51:53.098Z",
+>>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
     "demo": true
   },
   "config": {
@@ -11,10 +15,17 @@
     "maxAccionesDeshacer": 50,
     "maxActividad": 100,
     "sequences": {
+<<<<<<< HEAD
       "urgencia": 10,
       "movimiento": 48,
       "accion": 26,
       "aplicacionMovimiento": 44
+=======
+      "urgencia": 9,
+      "movimiento": 43,
+      "accion": 21,
+      "aplicacionMovimiento": 40
+>>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
     },
     "ultimaAperturaOperativa": "2026-08-09T18:40:28.360Z"
   },
@@ -834,26 +845,6 @@
       "estado": "completado"
     },
     {
-      "id": "MOV-00034",
-      "pacienteId": 10467,
-      "area": "Triaje",
-      "areaOrigen": null,
-      "areaDestino": "Triaje",
-      "fecha": "2026-08-08T21:40:28.360Z",
-      "descripcion": "Ingreso y registro administrativo",
-      "estado": "completado"
-    },
-    {
-      "id": "MOV-00035",
-      "pacienteId": 10467,
-      "area": "Hospitalización",
-      "areaOrigen": "Triaje",
-      "areaDestino": "Hospitalización",
-      "fecha": "2026-08-08T21:52:28.360Z",
-      "descripcion": "Traslado a Hospitalización",
-      "estado": "completado"
-    },
-    {
       "id": "MOV-00038",
       "pacienteId": 10451,
       "area": "Laboratorio",
@@ -861,16 +852,6 @@
       "areaDestino": "Laboratorio",
       "fecha": "2026-08-09T18:37:28.360Z",
       "descripcion": "Solicitud de toma de muestras",
-      "estado": "pendiente"
-    },
-    {
-      "id": "MOV-00040",
-      "pacienteId": 10467,
-      "area": "Radiología",
-      "areaOrigen": "Hospitalización",
-      "areaDestino": "Radiología",
-      "fecha": "2026-08-09T18:18:28.360Z",
-      "descripcion": "Control de imagen programado",
       "estado": "pendiente"
     },
     {
@@ -1023,6 +1004,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "id": "MOV-00044",
       "pacienteId": 123,
       "area": "Radiología",
@@ -1150,6 +1132,35 @@
       "areaDestino": "Quirófano",
       "fecha": "2026-08-12T02:05:00.000Z",
       "descripcion": "Traslado a Quirófano",
+=======
+      "id": "MOV-00034",
+      "pacienteId": 10467,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-08T21:40:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00035",
+      "pacienteId": 10467,
+      "area": "Hospitalización",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Hospitalización",
+      "fecha": "2026-08-08T21:52:28.360Z",
+      "descripcion": "Traslado a Hospitalización",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00040",
+      "pacienteId": 10467,
+      "area": "Radiología",
+      "areaOrigen": "Hospitalización",
+      "areaDestino": "Radiología",
+      "fecha": "2026-08-09T18:18:28.360Z",
+      "descripcion": "Control de imagen programado",
+>>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
       "estado": "pendiente"
     }
   ],
@@ -1763,6 +1774,7 @@
   ],
   "actividad": [
     {
+<<<<<<< HEAD
       "id": "ACT-000026",
       "tipo": "CREAR_TRASLADO",
       "descripcion": "Se solicitó el traslado de Juan Alejandro Espin Chavez a Quirófano",
@@ -1820,16 +1832,34 @@
       "entidad": {
         "tipo": "paciente",
         "id": 123
+=======
+      "id": "ACT-000021",
+      "tipo": "DESHACER",
+      "descripcion": "Se deshizo: El traslado de Lucía Benítez fue actualizado",
+      "fecha": "2026-08-11T21:51:53.098Z",
+      "entidad": {
+        "tipo": "movimiento",
+        "id": "MOV-00040"
+>>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
       }
     },
     {
       "id": "ACT-000020",
+<<<<<<< HEAD
       "tipo": "CREAR_PACIENTE",
       "descripcion": "Juan Alejandro Espin Chavez fue registrado en el sistema",
       "fecha": "2026-08-12T01:16:21.451Z",
       "entidad": {
         "tipo": "paciente",
         "id": 123
+=======
+      "tipo": "ACTUALIZAR_MOVIMIENTO",
+      "descripcion": "El traslado de Lucía Benítez fue actualizado",
+      "fecha": "2026-08-11T21:51:46.246Z",
+      "entidad": {
+        "tipo": "movimiento",
+        "id": "MOV-00040"
+>>>>>>> f40c5c31815616299cc6b8bbdc3947121d501119
       }
     },
     {
