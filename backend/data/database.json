@@ -2,7 +2,7 @@
   "meta": {
     "version": 1,
     "createdAt": "2026-08-09T18:40:28.360Z",
-    "updatedAt": "2026-08-09T23:32:18.666Z",
+    "updatedAt": "2026-08-11T21:51:53.098Z",
     "demo": true
   },
   "config": {
@@ -13,7 +13,7 @@
     "sequences": {
       "urgencia": 9,
       "movimiento": 43,
-      "accion": 19,
+      "accion": 21,
       "aplicacionMovimiento": 40
     },
     "ultimaAperturaOperativa": "2026-08-09T18:40:28.360Z"
@@ -811,26 +811,6 @@
       "estado": "completado"
     },
     {
-      "id": "MOV-00034",
-      "pacienteId": 10467,
-      "area": "Triaje",
-      "areaOrigen": null,
-      "areaDestino": "Triaje",
-      "fecha": "2026-08-08T21:40:28.360Z",
-      "descripcion": "Ingreso y registro administrativo",
-      "estado": "completado"
-    },
-    {
-      "id": "MOV-00035",
-      "pacienteId": 10467,
-      "area": "Hospitalización",
-      "areaOrigen": "Triaje",
-      "areaDestino": "Hospitalización",
-      "fecha": "2026-08-08T21:52:28.360Z",
-      "descripcion": "Traslado a Hospitalización",
-      "estado": "completado"
-    },
-    {
       "id": "MOV-00038",
       "pacienteId": 10451,
       "area": "Laboratorio",
@@ -838,16 +818,6 @@
       "areaDestino": "Laboratorio",
       "fecha": "2026-08-09T18:37:28.360Z",
       "descripcion": "Solicitud de toma de muestras",
-      "estado": "pendiente"
-    },
-    {
-      "id": "MOV-00040",
-      "pacienteId": 10467,
-      "area": "Radiología",
-      "areaOrigen": "Hospitalización",
-      "areaDestino": "Radiología",
-      "fecha": "2026-08-09T18:18:28.360Z",
-      "descripcion": "Control de imagen programado",
       "estado": "pendiente"
     },
     {
@@ -998,6 +968,36 @@
         "cama": null,
         "urgencia": null
       }
+    },
+    {
+      "id": "MOV-00034",
+      "pacienteId": 10467,
+      "area": "Triaje",
+      "areaOrigen": null,
+      "areaDestino": "Triaje",
+      "fecha": "2026-08-08T21:40:28.360Z",
+      "descripcion": "Ingreso y registro administrativo",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00035",
+      "pacienteId": 10467,
+      "area": "Hospitalización",
+      "areaOrigen": "Triaje",
+      "areaDestino": "Hospitalización",
+      "fecha": "2026-08-08T21:52:28.360Z",
+      "descripcion": "Traslado a Hospitalización",
+      "estado": "completado"
+    },
+    {
+      "id": "MOV-00040",
+      "pacienteId": 10467,
+      "area": "Radiología",
+      "areaOrigen": "Hospitalización",
+      "areaDestino": "Radiología",
+      "fecha": "2026-08-09T18:18:28.360Z",
+      "descripcion": "Control de imagen programado",
+      "estado": "pendiente"
     }
   ],
   "acciones": [
@@ -1392,6 +1392,26 @@
     }
   ],
   "actividad": [
+    {
+      "id": "ACT-000021",
+      "tipo": "DESHACER",
+      "descripcion": "Se deshizo: El traslado de Lucía Benítez fue actualizado",
+      "fecha": "2026-08-11T21:51:53.098Z",
+      "entidad": {
+        "tipo": "movimiento",
+        "id": "MOV-00040"
+      }
+    },
+    {
+      "id": "ACT-000020",
+      "tipo": "ACTUALIZAR_MOVIMIENTO",
+      "descripcion": "El traslado de Lucía Benítez fue actualizado",
+      "fecha": "2026-08-11T21:51:46.246Z",
+      "entidad": {
+        "tipo": "movimiento",
+        "id": "MOV-00040"
+      }
+    },
     {
       "id": "ACT-000019",
       "tipo": "DESHACER",
