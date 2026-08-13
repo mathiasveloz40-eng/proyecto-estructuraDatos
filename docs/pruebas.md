@@ -1,3 +1,10 @@
+
+
+# Aclaracion
+En este readme anotamos las pruebas que hicimos mandando 
+datos atravez de la api local
+para saber si el flujo de algoritmos funcionaba correctamente
+
 # Verificación funcional
 
 Última ejecución: 9 de agosto de 2026.

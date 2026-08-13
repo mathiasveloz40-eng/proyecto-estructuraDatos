@@ -1,14 +1,14 @@
 # Hospital Flow
 
-Sistema web para coordinar el flujo operativo de pacientes en un servicio de urgencias. El proyecto integra estructuras de datos clásicas detrás de funciones hospitalarias reales: priorización de atención, historial de traslados, búsqueda de pacientes, ocupación de camas, rutas internas y deshacer acciones.
+Proyecto de estructura de datos sistema web para coordinar el flujo operativo de pacientes en un servicio de urgencias. El proyecto integra estructuras de datos detrás de funciones que se usan usualmente en un dashboard de un hospital: priorización de atención, historial de traslados, búsqueda de pacientes, ocupación de camas, rutas internas y deshacer acciones.
 
-> Proyecto académico. Todos los datos son ficticios y el sistema no diagnostica ni recomienda tratamientos.
+> Proyecto académico. Todos los datos estan en un arreglo de objectos Json y el sistema.
 
 ## Problema y solución
 
-En urgencias, la información de espera, prioridad, ubicación y camas cambia constantemente. Hospital Flow centraliza esa operación en un dashboard: el personal puede registrar pacientes, controlar la lista de espera por triaje, asignar camas, trasladar pacientes y consultar indicadores calculados en tiempo real.
+El modulo urgencias, la información de espera, prioridad, ubicación y camas cambia constantemente. Hospital Flow centraliza esa operación en un dashboard: el personal puede registrar pacientes, controlar la lista de espera por triaje, asignar camas, trasladar pacientes y consultar indicadores calculados en tiempo real.
 
-La interfaz oculta deliberadamente los términos académicos. El usuario trabaja con acciones como **Llamar siguiente**, **Ver historial**, **Calcular ruta** o **Deshacer**, mientras el backend utiliza internamente las estructuras apropiadas.
+La interfaz abstrae el tema tecnico de estructura de datos para que el usuario no vea lo que hay detras de esas funciones en el tema tecnico. El usuario trabaja con acciones como **Llamar siguiente**, **Ver historial**, **Calcular ruta** o **Deshacer**, mientras el backend utiliza internamente las estructuras apropiadas.
 
 ## Características
 
@@ -26,13 +26,12 @@ La interfaz oculta deliberadamente los términos académicos. El usuario trabaja
 
 ## Tecnologías
 
-- HTML5, CSS3 y JavaScript puro.
+- HTML5, CSS3 y JavaScript.
 - Node.js y módulos nativos (`http`, `fs`, `path`, `url`, `crypto`).
 - Fetch API para la comunicación.
 - JSON local para persistencia.
 - `node:test` para pruebas automatizadas.
 
-No requiere ejecutar `npm install`.
 
 ## Ejecución
 
@@ -55,7 +54,7 @@ node backend/server.js
 node --test
 ```
 
-Las pruebas cubren las operaciones de las estructuras y los principales flujos de la API. Se ejecutan sobre archivos temporales para no modificar los datos de demostración.
+Las pruebas cubren las operaciones de las estructuras y los principales flujos de la API. Se ejecutan sobre archivos temporales.
 
 El detalle de los 22 criterios de aceptación está en [docs/pruebas.md](docs/pruebas.md).
 
@@ -102,11 +101,11 @@ Consulta [docs/estructuras.md](docs/estructuras.md) para operaciones, complejida
 
 ## Datos de demostración
 
-El repositorio incluye pacientes, camas, movimientos y esperas ficticias. `backend/data/seed.js` genera el estado inicial y el servidor lo conserva en `backend/data/database.json`.
+En nuestro proyecto incluye pacientes, camas, movimientos y esperas ficticias. `backend/data/seed.js` genera el estado inicial y el servidor lo conserva en `backend/data/database.json`.
 
 ## Seguridad y alcance
 
-Esta aplicación se diseñó para una demostración local. No incluye autenticación, cifrado de datos clínicos, auditoría regulatoria ni controles necesarios para producción. No debe usarse con datos reales.
+Esta aplicación se diseñó para una demostración local. No incluye autenticación, cifrado de datos, auditoría regulatoria ni controles necesarios para ponerla en produccion.
 
 ## Integrantes
 
@@ -114,8 +113,4 @@ Esta aplicación se diseñó para una demostración local. No incluye autenticac
 - Juan Espin
 
 
-
-# como correrlo
-Abrir cd \backend y correr el servidor
-usando node server.js 
 

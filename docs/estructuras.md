@@ -13,11 +13,10 @@
 
 ## Arreglos
 
-Los arreglos guardan catálogos estables como áreas y niveles de triaje, y representan colecciones persistidas que deben recorrerse para obtener indicadores. Acceder por índice cuesta `O(1)`; localizar un elemento sin índice cuesta `O(n)`.
+Los arreglos guardan catálogos estables como áreas y niveles de triaje, y representan colecciones persistidas que deben recorrerse para obtener indicadores.
 
 Archivos principales: `backend/config/catalogs.js`, `backend/data/seed.js` y `backend/services/dashboard.service.js`.
 
-No se añadió un arreglo artificial: es la representación natural cuando se necesitan estadísticas de toda una colección o una respuesta JSON ordenada para la interfaz.
 
 ## Historial de movimientos: lista enlazada
 
@@ -114,9 +113,8 @@ Insertion Sort construye progresivamente una región ordenada. Para cada element
 
 El mismo algoritmo acepta comparadores para tiempo de espera, nombre, fecha de ingreso y prioridad. No llama a `Array.sort()`.
 
-## Resumen para la defensa
+## Resumen
 
-La elección no parte de “dónde colocar cada estructura”, sino de la regla del negocio:
 
 - Secuencia editable de eventos → lista enlazada.
 - Revertir lo último → pila.

@@ -19,7 +19,7 @@ Servicios
 Persistencia JSON
 ```
 
-## Frontend
+## Frontend - Parte de Juan 
 
 `frontend/index.html` contiene únicamente el armazón permanente de la SPA: sidebar, cabecera, buscador, región principal, contenedor de modales y notificaciones. El router por hash monta un módulo distinto sin recargar el documento.
 
@@ -31,7 +31,7 @@ Persistencia JSON
 
 Los módulos no leen archivos JSON de forma directa. Todo dato visible llega de la API.
 
-## Backend
+## Backend - Parte de Mathias
 
 `backend/server.js` crea el servidor con `http.createServer()`, entrega los archivos estáticos y delega las solicitudes `/api/` al enrutador. Las rutas interpretan parámetros, cuerpos y códigos HTTP; la lógica operativa vive en servicios.
 
@@ -45,7 +45,8 @@ Responsabilidades principales:
 - Dashboard: agregación calculada de indicadores y alertas.
 - Deshacer: revierte la última acción almacenada que todavía es aplicable.
 
-## Persistencia
+## Persistencia - Juan Espin - Mathias Veloz
+### Parte repartida equitativamente del trabajo
 
 `JsonStore` carga y escribe `backend/data/database.json`. Si el archivo no existe, `backend/data/seed.js` crea los datos ficticios iniciales. Las estructuras en memoria se construyen desde una copia coherente de ese estado cuando cada operación las necesita; el grafo de áreas se crea al iniciar los servicios. Por eso las estructuras no sustituyen la persistencia, sino que proporcionan el comportamiento requerido durante la ejecución.
 
@@ -59,7 +60,7 @@ Una operación compuesta sigue este orden conceptual:
 
 La escritura está centralizada para evitar que las rutas dupliquen acceso al sistema de archivos.
 
-## Flujo integrado de ejemplo
+## Flujo integrado de ejemplo 
 
 Al trasladar un paciente de Urgencias a Radiología:
 
@@ -105,10 +106,3 @@ Así, una única acción visible integra lista enlazada, pila, arreglos e indica
 
 Las respuestas exitosas devuelven directamente el recurso. Los errores siguen el formato `{ "error": { "code", "message", "details" } }` con el código HTTP correspondiente.
 
-## Decisiones de diseño
-
-- CommonJS mantiene el proyecto ejecutable directamente con Node.js sin configuración adicional.
-- Los identificadores clínicos se normalizan a números para conservar un orden consistente en el árbol.
-- La prioridad no reemplaza el orden de llegada: existen cinco esperas independientes y cada una conserva el orden de ingreso.
-- El frontend no replica reglas sensibles; solicita al backend que confirme cada operación.
-- SVG ofrece un mapa accesible y responsive sin dependencias externas.
